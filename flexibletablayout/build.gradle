@@ -30,3 +30,31 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.1.0'
 }
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'FlexibleTabLayout'
+
+    publishedGroupId = 'com.asksira.android.flexibletablayout'
+    libraryName = 'FlexibleTabLayout'
+    artifact = 'flexibletablayout'
+
+    libraryDescription = 'A flexible TabLayout designed for ViewPager. You provide your own custom views for tab and indicator.'
+
+    siteUrl = 'https://github.com/siralam/FlexibleTabLayout'
+    gitUrl = 'https://github.com/siralam/FlexibleTabLayout.git'
+
+    libraryVersion = '0.1.0'
+
+    developerId = 'siralam'
+    developerName = 'Sira Lam'
+    developerEmail = 'sira.swlam@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+// Place it at the end of the file
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
